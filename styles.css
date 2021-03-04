@@ -3,7 +3,87 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Cambria', serif;
+  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  color: #000;
+  color: #15442d;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #aff1dd;
+}
+
+.container {
+  margin: 50px auto;
+  padding: 50px;
+  width: 1320px;
+  background-color: #e1f1eb;
+  border: 1px solid #15442d;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #15442d;
+}
+
+nav ul {
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+a {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  border-bottom: 2px solid #e1f1eb;
+  transition: all 0.15s linear;
+}
+
+a:hover {
+  color: #020806;
+  border-bottom: 2px solid #020806;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #020806;
+}
+
+header img {
+  margin: 30px 0 30px calc(50% - 100px);
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px #020806;
+}
+
+footer {
+  padding: 30px 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #15442d;
+}
+
+footer p {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.course-logo {
+  width: 150px;
+  height: auto;
 }
