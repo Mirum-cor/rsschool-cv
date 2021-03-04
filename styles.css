@@ -25,18 +25,23 @@ body {
   background-color: #e1f1eb;
   border: 1px solid #15442d;
   border-radius: 10px;
-  box-shadow: 0px 0px 5px #15442d;
+  box-shadow: 0px 0px 10px #15442d;
 }
 
-ul:not(#skills ul) {
+header ul,
+#contacts ul {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   width: 90%;
 }
 
-ul:not(#skills ul) li {
+header ul li,
+#contacs ul li {
   display: inline-block;
+}
+
+ul li {
   list-style-type: none;
 }
 
@@ -99,10 +104,39 @@ p {
 }
 
 #skills ul li {
+  margin-bottom: 10px;
   padding-left: 30px;
   list-style-type: none;
   background: url(img/li-background.svg) no-repeat left center;
   background-size: 15px;
+}
+
+
+
+.years {
+  font-weight: 700;
+}
+
+.position {
+  font-style: italic;
+}
+
+#education ul {
+  margin: 0 auto;
+  width: 520px;
+}
+
+#education ul li {
+  margin-bottom: 10px;
+}
+
+#education a {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#english-level {
+  text-align: center;
 }
 
 footer {
