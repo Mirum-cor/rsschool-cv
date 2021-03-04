@@ -53,7 +53,7 @@ a {
   transition: all 0.15s linear;
 }
 
-a:not(footer a:last-of-type):not(.messengers a):hover {
+a:hover {
   color: #020806;
   border-bottom: 2px solid #020806;
 }
@@ -111,6 +111,46 @@ p {
   background-size: 15px;
 }
 
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.ordered-project {
+  width: 40%;
+}
+
+.inner-project {
+  width: 30%;
+}
+
+figure {
+  margin-bottom: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #dce7e4;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #15442d;
+}
+
+figure img {
+  margin-left: 5%;
+  width: 90%;
+  height: auto;
+}
+
+figcaption {
+  margin-top: 10px;
+  text-align: center;
+}
+
+figcaption a {
+  border-bottom-color: #dce7e4;
+}
+
 #work-experience ul {
   margin: 0 auto;
   width: 660px;
@@ -165,4 +205,13 @@ footer p {
 .course-logo {
   width: 150px;
   height: auto;
+}
+
+footer a:last-of-type,
+footer a:last-of-type:hover,
+.messengers a,
+.messengers a:hover,
+figure > a,
+figure > a:hover {
+  border: none;
 }
