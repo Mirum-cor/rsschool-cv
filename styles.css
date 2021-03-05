@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Cambria', serif;
   font-weight: normal;
   font-size: 20px;
@@ -25,14 +26,19 @@ body {
   background-color: #e1f1eb;
   border: 1px solid #15442d;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px #15442d;
+  -webkit-box-shadow: 0px 0px 10px #15442d;
+          box-shadow: 0px 0px 10px #15442d;
 }
 
 header ul,
 #contacts ul {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 90%;
 }
 
@@ -50,6 +56,8 @@ a {
   font-size: 24px;
   line-height: 26px;
   border-bottom: 2px solid #e1f1eb;
+  -webkit-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
   transition: all 0.15s linear;
 }
 
@@ -72,7 +80,8 @@ header img {
   width: 200px;
   height: auto;
   border-radius: 15px;
-  box-shadow: 1px 1px 5px #020806;
+  -webkit-box-shadow: 1px 1px 5px #020806;
+          box-shadow: 1px 1px 5px #020806;
 }
 
 section {
@@ -88,8 +97,12 @@ h2 {
 }
 
 .messengers {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 20%;
 }
 
@@ -112,9 +125,13 @@ p {
 }
 
 .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .ordered-project {
@@ -128,12 +145,20 @@ p {
 figure {
   margin-bottom: 20px;
   padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #dce7e4;
   border-radius: 5px;
-  box-shadow: 0px 0px 5px #15442d;
+  -webkit-box-shadow: 0px 0px 5px #15442d;
+          box-shadow: 0px 0px 5px #15442d;
 }
 
 figure img {
@@ -190,9 +215,15 @@ figcaption a {
 
 footer {
   padding: 30px 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-top: 1px solid #15442d;
 }
 
