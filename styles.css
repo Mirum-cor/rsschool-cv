@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Cambria', serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  color: #15442d;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #aff1dd;
+}
+
+.container {
+  margin: 50px auto;
+  padding: 50px;
+  width: 1320px;
+  background-color: #e1f1eb;
+  border: 1px solid #15442d;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px #15442d;
+          box-shadow: 0px 0px 10px #15442d;
+}
+
+header ul,
+#contacts ul {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+}
+
+header ul li,
+#contacs ul li {
+  display: inline-block;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  border-bottom: 2px solid #e1f1eb;
+  -webkit-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+a:hover {
+  color: #020806;
+  border-bottom: 2px solid #020806;
+}
+
+h1 {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #020806;
+}
+
+header img {
+  margin: 30px 0 30px calc(50% - 100px);
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 1px 5px #020806;
+          box-shadow: 1px 1px 5px #020806;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.messengers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20%;
+}
+
+p {
+  margin-bottom: 15px;
+  text-indent: 25px;
+}
+
+#skills ul {
+  margin: 0 auto;
+  width: 130px;
+}
+
+#skills ul li {
+  margin-bottom: 10px;
+  padding-left: 30px;
+  list-style-type: none;
+  background: url(img/li-background.svg) no-repeat left center;
+  background-size: 15px;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ordered-project {
+  width: 40%;
+}
+
+.inner-project {
+  width: 30%;
+}
+
+figure {
+  margin-bottom: 20px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #dce7e4;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 5px #15442d;
+          box-shadow: 0px 0px 5px #15442d;
+}
+
+figure img {
+  margin-left: 5%;
+  width: 90%;
+  height: auto;
+}
+
+figcaption {
+  margin-top: 10px;
+  text-align: center;
+}
+
+figcaption a {
+  border-bottom-color: #dce7e4;
+}
+
+#work-experience ul {
+  margin: 0 auto;
+  width: 660px;
+}
+
+#work-experience ul li,
+#education ul li {
+  margin-bottom: 10px;
+}
+
+.years {
+  font-weight: 700;
+}
+
+.working-for {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.position {
+  font-style: italic;
+}
+
+#education ul {
+  margin: 0 auto;
+  width: 520px;
+}
+
+#education a {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#english-level {
+  text-align: center;
+}
+
+footer {
+  padding: 30px 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #15442d;
+}
+
+footer p {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.course-logo {
+  width: 150px;
+  height: auto;
+}
+
+footer a:last-of-type,
+footer a:last-of-type:hover,
+.messengers a,
+.messengers a:hover,
+figure > a,
+figure > a:hover {
+  border: none;
+}
